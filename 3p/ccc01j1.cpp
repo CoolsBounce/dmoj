@@ -28,5 +28,5 @@ int main() {
             stars -= 2;
             spaces += 4;
         }
-	  }
+    }
 }
