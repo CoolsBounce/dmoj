@@ -3,17 +3,10 @@ using namespace std;
 typedef long long ll;
 
 int primacity[10000001];
-bool isPrime[10000001];
 int n = 10000000;
 
 vector<int> nums[20];
 int main() {
-    memset(isPrime, true, sizeof(isPrime));
-    for (int i = 2; i*i <= n; i++) {
-        if (isPrime[i]) {
-            for (int j = i*i; j <= n; j += i) isPrime[j] = false;
-        }
-    }
     for (int i = 2; i <= n; i++) {
         if (primacity[i] == 0) {
             for (int j = i; j <= n; j += i) primacity[j]++;
