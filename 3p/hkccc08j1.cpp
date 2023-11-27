@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int c, n; cin >> c;
-    int cmax, nmax = 0;
+    int cmax = 0, nmax = 0;
     for (int i = 0, a, b; i < c; i++) {
         cin >> a >> b;
         cmax = max(cmax, a*b);

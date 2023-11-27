@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     string s; cin >> s;
-    int h, v = 0;
+    int h = 0, v = 0;
     for (char c : s) {
         if (c == 'H') h++;
         else v++;
